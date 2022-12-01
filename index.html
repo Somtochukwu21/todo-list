@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="todo-form">
+        <textarea class="todo-title"></textarea>
+        <button class="todo-add-btn">Add</button>
+      </div>
+      <div class="todo-tabs-section">
+        <div class="todo-tabs">
+          <span class="tab active" data-selection="all"> All </span>
+          <span class="tab" data-selection="pending"> Pending </span>
+          <span class="tab" data-selection="completed"> Completed </span>
+        </div>
+        <button class="clear-all-btn">Clear All</button>
+      </div>
+      <ul class="todo-list"></ul>
+    </main>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

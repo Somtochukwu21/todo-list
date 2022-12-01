@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+  background-color: rgb(213, 213, 213);
+  margin: 0px;
+  padding: 0px;
+}
+
+button,
+textarea,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+main {
+  max-width: 500px;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  margin-top: 50px;
+  box-shadow: 0px 0px 3px 2px rgb(201, 201, 201);
+  border-radius: 5px;
+}
+
+.todo-title {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  height: 70px;
+}
+
+.todo-title:focus {
+  outline: none;
+}
+
+.todo-form>button {
+  width: 100%;
+  padding: 6px;
+  font-size: 16px;
+  background-color: #3675fe;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+.todo-tabs-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+.todo-tabs-section>button,
+.todo-list button {
+  background-color: #3675fe;
+  border: none;
+  color: white;
+  text-transform: capitalize;
+  border-radius: 4px;
+  padding: 6px;
+}
+
+.todo-tabs {
+  display: flex;
+  gap: 15px;
+}
+
+.tab {
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.tab:hover {
+  font-weight: bold;
+  border-bottom: 2px solid #3675fe;
+}
+
+.tab.active {
+  border-bottom: 2px solid #3675fe;
+  color: #3675fe;
+  font-weight: bold;
+}
+
+ul.todo-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+ul.todo-list>li {
+  padding: 8px 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.todo-cont,
+.todo-actions {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 5px;
+}
