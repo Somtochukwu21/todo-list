@@ -27,12 +27,32 @@ main {
   border-radius: 5px;
 }
 
-.todo-title {
+/* .todo-title {
   width: 100%;
   border: 1px solid gray;
   border-radius: 5px;
   padding: 10px;
   height: 70px;
+} */
+
+.todo-title {
+  width: 100%;
+  border: 1px solid gray;
+  margin-bottom: .5rem;
+  border-radius: 5px;
+  padding: 10px;
+  /* height: 70px; */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.edit-todo {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: none;
 }
 
 .todo-title:focus {
@@ -104,6 +124,15 @@ ul.todo-list>li {
   align-items: flex-start;
   justify-content: space-between;
   gap: 5px;
+  /* background: red; */
+}
+
+ul.todo-list>li>.todo-cont>label {
+  outline: none;
+}
+
+ul.todo-list>li>.todo-cont>label:not(:read-only) {
+  color: crimson;
 }
 
 .todo-cont,

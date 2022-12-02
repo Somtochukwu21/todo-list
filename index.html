@@ -9,10 +9,13 @@
   </head>
   <body>
     <main>
-      <div class="todo-form">
-        <textarea class="todo-title"></textarea>
-        <button class="todo-add-btn">Add</button>
-      </div>
+      <form class="todo-form">
+        <input type="text" class="todo-title" />
+        <!-- <textarea class="todo-title"></textarea> -->
+        <button class="todo-add-btn" type="submit" role="submit-button">
+          Add
+        </button>
+      </form>
       <div class="todo-tabs-section">
         <div class="todo-tabs">
           <span class="tab active" data-selection="all"> All </span>
@@ -23,6 +26,6 @@
       </div>
       <ul class="todo-list"></ul>
     </main>
-    <script src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/app.js"></script>
   </body>
 </html>
